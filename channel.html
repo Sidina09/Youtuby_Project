@@ -4,27 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--1er méthode de utiliser bootstrap offline juste telecharger les fichiers -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css">  -->
-
-    
-    
     <title>يوتيوبي</title>
-    <!-- 1 er méthode de utiliser font-awesome offline juste telecharger les dossiers -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
-
-    <!-- 2 éme méthode on copier le lien cdn ici -->
     <link rel="stylesheet" href="css/bootstrap-rtl.css">
     <link rel="stylesheet" href="css/index.css">
-    <style>
-        .col {
-            background-color: red;
-            border: 1px solid #ffff;
-        }
-    </style>
+    <link rel="stylesheet" href="css/channel.css">
 </head>
+
+
 <body class="mt-5 rtl"  >
   <div id="top-menu">
     <div class="container-fluid">
@@ -94,7 +82,7 @@
           </div>
         </div>
       </div>
-
+      <!--------------------------------------Menu navbar item------------------------------------>
       <div class="row pt-4">
         <div id="wrap">
           <div class="sidebar">
@@ -103,7 +91,7 @@
                 <i class="fas fa-home mr-2 purple"></i>الصفحة الرئيسية 
               </a>
               <a href="index.html"  class="list-group-item list-group-item-action " >
-                <i class="fas fa-algolia mr-2 purple"></i> الفيديوهات المقترحة
+                <i class="fas fa-compass mr-2 purple"></i> الفيديوهات المقترحة
               </a>
               <a href="#"  class="list-group-item list-group-item-action" >
                 <i class="fas fa-plus-square mr-2 purple"></i> المرفوعة حديثا
@@ -112,7 +100,7 @@
                 <i class="fas fa-fire-alt mr-2 purple"></i> الفيديوهات الرائجة 
               </a>
               <a href="#"  class="list-group-item list-group-item-action">
-                <i class="fas fa-fire-alt mr-2 purple"></i> فيديوهاتي 
+                <i class="fas fa-clapperboard mr-2 purple"></i> فيديوهاتي  
               </a>
               <a href="#"  class="list-group-item list-group-item-action">
                 <i class="fas fa-history mr-2 purple"></i> سجل المشاهدة 
@@ -148,34 +136,41 @@
       </div>
     </div>
 
-
+    <!-------------------------------------- Channel page -------------------------------------->
     <div class="channel-page">
       <div class="container-fluid">
         <div class="row">
-          <div class="banner position-relative my-3">
-            <img class="img-fluid" src="img/cover.jpg" alt="">
-            <div class="social-media position-absolute bg-info p-1 " style="bottom: 11pX; left: 20px; ;">
-              <a href="#" title="Pingucoder" class="mr-1">
+          <!--------------------------------------Cover page channel & social media compte------------->
+          <div class="banner position-relative my-3 mx-3">
+            <img class="img-fluid rounded" src="img/cover.jpg" alt="بلّوار ميديا لتبقى بالقرب من موريتانيا" >
+            <div class="social-media position-absolute bg-dark p-1  " >
+              <a href="https://127.0.0.1:5500/channel.html" title="القناة الرسمية" class="mr-1">
                 <img src="img/icons/bellewarmedia.png" alt="بلوار ميديا">
                 <span style="color:#ffff">بلوار ميديا</span>
               </a>
-              <a href="#" title="تابعنا على تويتر" class="mr-1">
+              <a href="https://www.youtube.com/user/bellewar200" title="تابعنا على يوتيوب" class="mr-1">
+                <img src="img/icons/youtube.png" alt="بلوار ميديا">
+               
+              </a>
+              <a href="https://twitter.com/bellewarmedia" title="تابعنا على تويتر" class="mr-1">
                 <img src="img/icons/twitter.png" alt="بلوار ميديا">
                
               </a>
-              <a href="#" title="تابعنا على فيسبوك" class="mr-1">
+              <a href="https://www.facebook.com/BellewarMedia/" title="تابعنا على فيسبوك" class="mr-1">
                 <img src="img/icons/facebook.png" alt="بلوار ميديا">
                
               </a>
-              <a href="#" title="Bellewarmedia" >
+              <a href="https://www.bellewarmedia.com/" title="موقعنا الرسمي" >
                 <img src="img/icons/site-web.png" alt="بلوار ميديا">
               </a>
             </div>
-            <div class="follow position-absolute" style="bottom: 11px; right: 18px" >
-              <button class="btn btn-info ">491 ألف مشترك</button>
+            <div class="follow position-absolute">
+              <button class="btn btn-info" id="follow-btn">491 ألف مشترك</button>
             </div>
           </div>
         </div>
+
+        <!--------------------------------------Navbar channel------------------------------------>
         <div class="row">
           <nav class="navbar navbar-expand-lg navbar-light bg-light mx-auto w-100 p-3">
               <ul class="navbar-nav mx-sm-auto d-block pl-0">
@@ -183,16 +178,19 @@
                   <a class="nav-link" href="#">الصفحة الرئيسية</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">فيديوهاتي</a>
+                  <a class="nav-link" href="#">الفديوهات</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">قوائم التشغيل</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#">المنتدى</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#">القنوات</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">مناقشة</a>
+                  <a class="nav-link" href="#">لمحة</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">حول</a>
@@ -200,17 +198,19 @@
               </ul>
         </nav>
         </div>
+        <!--------------------------------------Video intro channel------------------------------------>
         <div class="video-section bg-white p-2 mt-3">
           <div class="card border-0 ">
             <div class="row">
               <div class="col-sm-6">
-                  <video  controls poster="img/poster.png" autoplay muted loop class="w-100">
-                  <track kind="captions" src=".vtt" srclang="ar" label="عربي" default>
+                  <video  controls poster="img/channel.png"  loop muted class="w-100">
+                  <track kind="captions" src=".vtt" srclang="ar" label="عربي" default">
                     <source src="video/channel1.mp4" type="video/webm">
                     <source src="video/channel1.mp4" type="video/mp4">
                     لايدعم متصفحك العنصر <code>video</code>
                   </video>
               </div>
+              <!--------------------------------------Script identifier channel------------------------------------>
               <div class="col-sm-6">
                 <div class="card-block">
                   <a href="watch.html">

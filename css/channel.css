@@ -1,0 +1,18 @@
+.follow{
+    bottom: 16px;
+    right: 20px;
+}
+#follow-btn{
+    color: #fff !important;
+    border-color: #C70039 !important;
+    background-color: #C70039 !important;
+    border-radius: 10px;
+}
+.social-media{
+    bottom: 11pX; 
+    left: 20px;
+}
+
+.bg-dark , a img{
+    border-radius: 9px;
+}
